@@ -1,0 +1,176 @@
+<app-jumbotron></app-jumbotron>
+
+
+
+  
+<div class="grid grid-cols-2 gap-2 py-6 max-sm:grid-cols-1 ">
+    <div class="bg-white p-6 pt-20">
+        <div class="text-green-600 font-semibold text-sm">WELCOME TO GREENGRUB</div>
+        <h1 class="text-3xl font-bold mt-2">Be Healthy & Eat Only Pure Organic Food</h1>
+      
+        <div class="flex flex-col md:flex-row gap-6 mt-6">
+          <!-- Feature 1 -->
+          <div class="flex items-center gap-3">
+            <img src="images/L02-services-01.png" alt="Agriculture Icon" class="w-10 h-10">
+            <div class="text-lg font-semibold">Agriculture & Natural Foods</div>
+          </div>
+      
+          <!-- Feature 2 -->
+          <div class="flex items-center gap-3">
+            <img src="images/L02-services-02_2c21cdf5-5445-4ae1-9ff7-438831e8eff9.png" alt="Vegetables Icon" class="w-10 h-10">
+            <div class="text-lg font-semibold">Fresh Healthy Vegetables & Fruits</div>
+          </div>
+        </div>
+      <hr>
+        <p class="text-gray-600 text-sm mt-4">
+          Eating a diet that consists of pure and organic foods can contribute to overall health 
+          and well-being. Organic foods are grown without synthetic pesticides, herbicides, and 
+          fertilizers, and they often contain fewer artificial additives.
+        </p>
+      
+        <button class="btn btn-primary roboto-thin mt-6">
+          DISCOVER MORE
+        </button>
+      
+       
+    
+     
+      </div>
+
+       <div class="flex space-x-3 ">
+            <div class=" flex flex-col space-y-6">
+                <img src="images/L01-cms-01.webp" alt="Organic Food"  class="w-0 h-40 md:w-64 md:h-60 object-cover  object-cover aspect-square   rounded-lg">
+                <img src="images/L01-cms-02.webp" alt="Organic Food"  class="w-0 h-40 md:w-64 md:h-60 object-cover  object-cover aspect-square   rounded-lg">
+            </div>
+            <div class="px-4">
+                <img src="images/L01-cms-03.webp" alt="Organic Food" class="rounded-lg">
+
+            </div>
+    </div>
+</div>
+
+<div class="p-8  bg-[#F9F6F1]">
+  <div class="flex items-center justify-center py-20">
+    <div>
+     
+      <div class="flex justify-center py-6">
+        <img src="images/L01-seperator.png" alt="Organic Food" class="rounded-lg ">
+      </div>
+
+      <p class="flex justify-center text-[#519B4D] uppercase roboto-black py-0">Shop by categories</p>
+    <p class=" text-3xl roboto-black">Organic & Healthy Food</p>
+      <p class=" text-3xl flex justify-center roboto-black">Provider Farming</p>
+    </div>
+  </div> 
+ 
+
+  
+
+
+<app-category-card [card]="categoryList"></app-category-card>
+</div>
+
+<div>
+  <!-- component -->
+<div class="da relative p-4  my-6 grid grid-cols-2 gap-7   overflow-hidden max-sm:grid-cols-1 ">
+  <div class="group relative   bg-red-500 m-0 flex h-60   rounded-xl shadow-xl ring-gray-900/5 ">
+    <div class="z-10 h-full w-full overflow-hidden rounded-xl   opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-100">
+      <img src="images/L01-banner-01.webp" class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
+    </div>
+    <div class="absolute  z-20 m-0  w-80 p-4 mt-3 ">
+      <h1 class="font-serif text-xl roboto-thin font-bold  text-white  uppercase">Daily fresh & healthy</h1>
+      <p class=" text-3xl roboto-black text-white    ">We provide quality juice</p>
+      <button class="btn uppercase bg-white text-primary mt-5  roboto-thin  hover:bg-gray-800 hover:text-white">
+       shop now
+      </button>
+    </div>
+    </div>
+
+  <div class="group relative m-0 flex h-60  rounded-xl shadow-xl ring-gray-900/5 ">
+    <div class="z-10 h-full w-full overflow-hidden rounded-xl  opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-100">
+      <img src="images/L01-banner-02.webp" class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
+    </div>
+    <div class="absolute  z-20 m-0  w-80 p-4 mt-3 ">
+      <h1 class="font-serif text-xl roboto-thin font-bold  text-white  uppercase">best for health</h1>
+      <p class=" text-3xl roboto-black text-white i   ">Organic fresh Vegetables</p>
+      <button class="btn uppercase bg-white text-primary mt-5  roboto-thin  hover:bg-gray-800 hover:text-white">
+       shop now
+      </button>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div class="p-4">
+  <app-product-card [card]="productList" ></app-product-card>
+</div>
+
+<!-- <swiper-container class="p-20"  loop="true" grab-cursor="true" speed="1500" autoplay="true" pagination="true" >
+
+   
+  @for (image of images; track $index) {
+      <swiper-slide >
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
+          <div class=" px-4 xl:pt-0 iphone-se:pt-0 iphone-se:p-4">
+             
+              <div>
+                <fa-icon [icon]="image.icon" class=" justify-center  flex text-7xl text-white"></fa-icon> 
+                <p class="text-white text-2xl font-bold py-6">{{image.label}} </p>
+             </div>
+
+            
+              <div class='flex xl:space-x-4 mt-10 justify-start iphone-se:hidden xl:block 2xl:block items-center my-12 xl:flex-row xl:space-y-0 iphone-se:flex-col iphone-se:space-x-0 iphone-se:space-y-2 iphone-se:my-6  '>
+              <button  type="button"  class="text-[#000] bg-[#fff] text-base hover:duration-200  hover:bg-[#FC9401] hover:text-black focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium xl:w-48   xl:px-4 xl:py-3 text-center uppercase  mb-2 iphone-se:w-28 iphone-se:px-2 iphone-se:py-2 iphone-se:text-sm">Learn more </button>
+              <button   type="button"  class="text-[#fff] bg-[#FC9401] text-base hover:duration-200  hover:bg-[#FC9401] hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium  xl:w-48   xl:px-4 xl:py-3 uppercase text-center  mb-2 iphone-se:w-28 iphone-se:px-2 iphone-se:py-2 iphone-se:text-sm">Contact us </button>
+              </div>
+             </div>
+        </div>
+          <img [src]="image.imageSrc" loading="lazy" >
+     
+      </swiper-slide>
+  }
+</swiper-container> -->
+
+<!-- <swiper-container class="p-1 space-x-4" effect="cube"  loop="true" grab-cursor="true" speed="1500" autoplay="true" pagination="true" >
+
+  @for (item of productList; track $index) {
+  
+   
+    <div class="w-full group max-w-sm bg-[#FAF6F1] border border-gray-200 rounded-lg shadow-sm  dark:">
+        <div class="z-10 relative  overflow-hidden rounded-xl  opacity-80 transition duration-300 ease-in-out group-hover:opacity-100   dark:opacity-100">
+  
+            <div class=" absolute center top-48 z-20 hidden items-center   group-hover:block">
+                <div class="ml-11 flex justify-center items-center space-x-3 rtl:space-x-reverse">
+                    <span class=" rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
+                        <fa-icon [icon]="faEye" class="close pointer cursor:pointer text-white "></fa-icon>
+  
+                    </span>
+                    <span class=" rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
+                        <fa-icon [icon]="faBriefcase" class="close pointer text-white "></fa-icon>
+  
+                    </span>
+                    <span class=" rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
+                        <fa-icon [icon]="faHeart" class="close pointer text-white "></fa-icon>
+  
+                    </span>
+                    
+                </div>
+            </div>
+            <img src="images/product-10.webp" class="animate-fade-in block h-full w-full scale-100 transform object-cover group-hover:hidden object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
+            <img src="images/product-10-02.webp" class="animate-fade-in hidden h-full w-full scale-100 transform object-cover group-hover:block object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
+          </div>
+          <hr class=" border-gray-300">
+          <hr  class="mt-1 border-gray-300">
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl flex justify-center font-semibold tracking-tight text-gray-900 group-hover:text-[#519B4D] dark:">{{item.name}}</h5>
+                <h5 class="text-lg flex justify-center roboto-thin font-semibold tracking-tight text-gray-900  dark:">${{item.price}}</h5>
+            </a>
+          
+        </div>
+    </div>
+  
+  }
+    </swiper-container> -->

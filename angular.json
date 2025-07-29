@@ -30,7 +30,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -99,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "bf6405b8-e678-42e8-8cd2-061099179b32"
   }
 }
