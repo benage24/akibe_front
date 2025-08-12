@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
-
+import { MatDialog } from '@angular/material/dialog';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   faTimes,
@@ -15,6 +15,7 @@ import {
   faBriefcase,
   faHeart,
 } from '@fortawesome/free-solid-svg-icons';
+import { ProductDetail } from '../../dialogs/product-detail/product-detail';
 @Component({
   selector: 'app-product-card',
   standalone: true,
@@ -30,4 +31,24 @@ export class ProductCardComponent {
    faBriefcase=faBriefcase
    faHeart=faHeart
   @Input() card: any
+
+    constructor(
+
+    private dialog: MatDialog,
+  
+    
+   
+  ) {}
+
+ openProductPreviwDialog(product: any) {
+  console.log(product,"rrrr")
+    this.dialog.open(ProductDetail, {
+      width: '55%',
+      height: '90%',
+      data: {
+        data: product,
+      },
+    });
+  }
+
 }

@@ -1,6 +1,6 @@
 
 <div class="grid grid-cols-5  gap-6 max-sm:grid-cols-1  ">
-jjjj
+
 @for (item of card; track $index) {
 
     <!-- card -->
@@ -9,23 +9,22 @@ jjjj
 
             <div class=" absolute center top-48 z-20 hidden items-center   group-hover:block">
                 <div class="ml-11 flex justify-center items-center space-x-3 rtl:space-x-reverse">
-                    <span (click)="openProductPreviwDialog(item)" class=" rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
+                    <span (click)="openProductPreviwDialog(item)" class=" cursor:pointer rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
                         <fa-icon [icon]="faEye" class="close pointer cursor:pointer text-white "></fa-icon>
 
                     </span>
-                    <span class=" rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
-                        <fa-icon [icon]="faBriefcase" class="close pointer text-white "></fa-icon>
+                    <span class=" cursor:pointer rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
+                        <fa-icon label="Ajouter au panier" [icon]="faBriefcase" class="close pointer text-white "></fa-icon>
 
                     </span>
                     <span class=" rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center">
                         <fa-icon [icon]="faHeart" class="close pointer text-white "></fa-icon>
 
                     </span>
-                    <button class=" rounded-full h-10 w-10 bg-[#519B4D] flex justify-center items-center" (click)="openProductPreviwDialog(item)">gjgjg</button>                   
                 </div>
             </div>
-            <img src="images/product-10.webp" class="animate-fade-in block h-full w-full scale-100 transform object-cover group-hover:hidden object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
-            <img src="images/product-10-02.webp" class="animate-fade-in hidden h-full w-full scale-100 transform object-cover group-hover:block object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
+            <img src="images/L01-cms-01.webp" class="animate-fade-in block h-full w-full scale-100 transform object-cover group-hover:hidden object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
+            <img src="images/L01-cms-02.webp" class="animate-fade-in hidden h-full w-full scale-100 transform object-cover group-hover:block object-center opacity-100 transition duration-300 group-hover:scale-110" alt="" />
           </div>
           <hr class=" border-gray-300">
           <hr  class="mt-1 border-gray-300">

@@ -5,11 +5,12 @@ import { error } from 'console';
 import { CategoryCardComponent } from '../../components/cards/category-card/category-card.component';
 import { faBriefcase, faCalendarDays, faClock, faEye, faHeart, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { ProductService } from '../../../services/product.service';
+import { Product } from '../../components/cards/product/product';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [JumbotronComponent,CategoryCardComponent,ProductCardComponent],
+  imports: [JumbotronComponent,Product],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -31,7 +32,7 @@ faClock=faClock
 
 
  getProduct(){
-  this.productService.find$('products').subscribe({
+  this.productService.find$('packages').subscribe({
     next:(res)=>{
         this.productList=res
           console.log(this.productList)

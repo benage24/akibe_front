@@ -1,0 +1,17 @@
+<p class="mb-4 text-xl font-bold">{{pName}}</p>
+
+<ul class=" space-y-2">
+@for (item of pItem; track $index) {
+   <li class="p-2  ">
+    <div class="font-semibold">
+        {{item.name}}
+    </div>
+    <div class="font-sm text-gray-600">
+       Prix: {{ item.price | currency }}
+    </div>
+     <div class="font-sm text-gray-600">
+       Qty: {{item.quantity}}
+    </div>
+</li> 
+}
+</ul>

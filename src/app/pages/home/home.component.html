@@ -5,7 +5,7 @@
   
 <div class="grid grid-cols-2 gap-2 py-6 max-sm:grid-cols-1 ">
     <div class="bg-white p-6 pt-20">
-        <div class="text-green-600 font-semibold text-sm">WELCOME TO GREENGRUB</div>
+        <div class="text-green-600 font-semibold text-sm">WELCOME TO AKIBE</div>
         <h1 class="text-3xl font-bold mt-2">Be Healthy & Eat Only Pure Organic Food</h1>
       
         <div class="flex flex-col md:flex-row gap-6 mt-6">
@@ -49,8 +49,10 @@
     </div>
 </div>
 
+
+
 <div class="p-8  bg-[#F9F6F1]">
-  <div class="flex items-center justify-center py-20">
+  <div class="flex items-center justify-center py-10">
     <div>
      
       <div class="flex justify-center py-6">
@@ -63,11 +65,13 @@
     </div>
   </div> 
  
+  <app-product [card]="productList" ></app-product>
 
   
 
+  <!-- <app-product [card]="productList" ></app-product> -->
 
-<app-category-card [card]="categoryList"></app-category-card>
+<!-- <app-category-card [card]="categoryList"></app-category-card> -->
 </div>
 
 <div>
@@ -104,7 +108,7 @@
 </div>
 
 <div class="p-4">
-  <app-product-card [card]="productList" ></app-product-card>
+  <!-- <app-product [card]="productList" ></app-product> -->
 </div>
 
 <!-- <swiper-container class="p-20"  loop="true" grab-cursor="true" speed="1500" autoplay="true" pagination="true" >
